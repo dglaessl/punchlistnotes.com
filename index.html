@@ -196,6 +196,20 @@ h1 .mark path {
 .punch .open .item { font-weight: 500; }
 .punch .item time { white-space: nowrap; }
 
+.first-issue {
+  margin: 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-stretch: 68%;
+  font-variation-settings: "wdth" 68;
+  font-size: clamp(1.375rem, 3vw, 1.75rem);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.first-issue time { color: var(--redline); }
+
 .titleblock {
   border: 1.5px solid var(--ink);
   font-family: var(--font-mono);
@@ -256,14 +270,7 @@ h1 .mark path {
   </section>
 
   <div class="lower">
-    <section class="punch" aria-labelledby="punch-h">
-      <h2 id="punch-h">Remaining before handover</h2>
-      <ol>
-        <li class="done"><span class="no">01</span><span class="box" aria-hidden="true"></span><span class="item">Name and positioning <span class="visually-hidden">(done)</span></span></li>
-        <li class="done"><span class="no">02</span><span class="box" aria-hidden="true"></span><span class="item">Handles and domain <span class="visually-hidden">(done)</span></span></li>
-        <li class="open"><span class="no">03</span><span class="box" aria-hidden="true"></span><span class="item">First issue, <time datetime="2026-12-15">15 December 2026</time></span></li>
-      </ol>
-    </section>
+    <p class="first-issue">First issue <time datetime="2026-12-15">15 December 2026</time></p>
 
     <aside class="titleblock" aria-label="Title block">
       <div class="wide"><span>Project</span><strong>Punch List</strong></div>
